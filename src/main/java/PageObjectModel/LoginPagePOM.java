@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 public class LoginPagePOM {
 	public WebDriver driver;  ///curently this does not have scoep
 	//Encapsulation
-	private By username=By.xpath("//input[@id='username']");
-	private By password=By.xpath("//input[@id='password']");
-	private By login=By.xpath("//input[@id='Login']");
+	private By username = By.xpath("//input[@id='username']");
+	private By password = By.xpath("//input[@id='password']");
+	private By login = By.xpath("//input[@id='Login']");
+	private By TryforFree = By.xpath("//a[@id='signup_link']");
   //driver2 took the scope from verifyLoginPage
 
     public LoginPagePOM(WebDriver driver2) {
@@ -32,6 +33,9 @@ public WebElement EnterPassword() {
 	
 public WebElement clickLogin() {
 	 return driver.findElement(login);
+}
+public WebElement TryforFree() {
+	return driver.findElement(TryforFree);
 }
 
 	

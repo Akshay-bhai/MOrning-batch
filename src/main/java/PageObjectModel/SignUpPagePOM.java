@@ -7,36 +7,59 @@ import org.openqa.selenium.WebElement;
 public class SignUpPagePOM {
 	public WebDriver driver;
 	
-	private By signupbuttun = By.xpath("//a[@class='button secondary']");
-	private By firstName = By.xpath("//input[@name='UserFirstName']");
-	private By lastName = By.xpath("//input[@name='UserLastName']");
-	private By email = By.xpath("//input[@name='UserEmail']");
-	private By usertitle = By.xpath("//select[@name='UserTitle']");
-	private By selecttitle = By.xpath("//option[@value='IT_Manager_AP']");
-	private By company=By.xpath("//input[@name='CompanyName']");
-	
+	private By Firstname = By.xpath("//input[@name='UserFirstName']");// By is used to store locator.
+	private By Lastname = By.xpath("//input[@name='UserLastName']");
+	private By WorkEmail = By.xpath("//input[@name='UserEmail']");
+	private By JobTitle = By.xpath("//select[@name='UserTitle']");
+	private By Company = By.xpath("//input[@name='CompanyName']");
+	private By Employees = By.xpath("//select[@name='CompanyEmployees']");
+	private By Phone = By.xpath("//input[@name='UserPhone']");
+	private By Country = By.xpath("//select[@name='CompanyCountry']");
+    private By checkbox = By.xpath("//div[@class='checkbox-ui']");
+	//private By TryforFree = By.xpath("//a[@id='signup_link']");
 	
 	
 	public SignUpPagePOM(WebDriver driver2) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver2;
 	}
-
-	public WebElement clicksignup() {
-		return driver.findElement(signupbuttun);
+	public WebElement EnterFirstname() {
+		// TODO Auto-generated method stub
+		return driver.findElement(Firstname);
 	}
 
-	public WebElement EnterfirstName() {
-		return driver.findElement(firstName);
+	public WebElement EnterLastname() {
+		return driver.findElement(Lastname);
 	}
 
-	public WebElement EnterlastName() {
-		return driver.findElement(lastName);
+	public WebElement WorkEmail() {
+		return driver.findElement(WorkEmail);
 	}
 
-	public WebElement Enteremail() {
-		return driver.findElement(email);
+	public WebElement JobTitle() {
+		return driver.findElement(JobTitle);
 	}
+
+	public WebElement Company() {
+		return driver.findElement(Company);
+	}
+
+	public WebElement Employees() {
+		return driver.findElement(Employees);
+	}
+
+	public WebElement Phone() {
+		return driver.findElement(Phone);
+	}
+
+	public WebElement Country() {
+		return driver.findElement(Country);
+	}
+	public WebElement checkbox() {
+		return driver.findElement(checkbox);
+	}
+	
+
+}
 
 	
-}
