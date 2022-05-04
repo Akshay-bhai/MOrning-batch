@@ -36,11 +36,13 @@ public class VerifyLogin extends BaseClass{  //Inheritance
 		Object[][] data = new Object[2][2];
 		
 		//correct username and password
-		data[0][0] = Constants.username1;
+		data[0][0] = Constants.username1;//Constants class me static type variable liya hai 'username1' , usse yaha par call kiya hai class.variablename .
 		data[0][1] = Constants.password1;
+		
+		//incorrect username and password
 		data[1][0] = Constants.username2;
 		data[1][1] = Constants.password2;
-		//incorrect username and password
+		
 		return data;
 	}
 }

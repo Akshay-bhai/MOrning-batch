@@ -10,13 +10,13 @@ public class SignUpPagePOM {
 	private By Firstname = By.xpath("//input[@name='UserFirstName']");// By is used to store locator.
 	private By Lastname = By.xpath("//input[@name='UserLastName']");
 	private By WorkEmail = By.xpath("//input[@name='UserEmail']");
-	private By JobTitle = By.xpath("//select[@name='UserTitle']");
+	private By JobTitle = By.xpath("//input[@name='UserTitle']");
 	private By Company = By.xpath("//input[@name='CompanyName']");
 	private By Employees = By.xpath("//select[@name='CompanyEmployees']");
 	private By Phone = By.xpath("//input[@name='UserPhone']");
 	private By Country = By.xpath("//select[@name='CompanyCountry']");
     private By checkbox = By.xpath("//div[@class='checkbox-ui']");
-	//private By TryforFree = By.xpath("//a[@id='signup_link']");
+	private By TryforFree = By.xpath("//a[@id='signup_link']");
 	
 	
 	public SignUpPagePOM(WebDriver driver2) {
@@ -58,6 +58,10 @@ public class SignUpPagePOM {
 	public WebElement checkbox() {
 		return driver.findElement(checkbox);
 	}
+	public WebElement clicksignup() {
+		return driver.findElement(TryforFree);
+	}
+	
 	
 
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 
 public class LoginPagePOM {
-	public WebDriver driver;  ///curently this does not have scoep
+	public WebDriver driver;  ///curently this does not have scope
 	//Encapsulation
 	private By username = By.xpath("//input[@id='username']");
 	private By password = By.xpath("//input[@id='password']");

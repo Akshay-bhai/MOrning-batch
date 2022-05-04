@@ -12,5 +12,6 @@ public static final String Company = "Tesla";
 public static final String phone = "123789";
 public static final String JobTitle = "Developer";
 //public static final String Employees = "Developer";
+//public static final CharSequence Employees = null;
 
 }
